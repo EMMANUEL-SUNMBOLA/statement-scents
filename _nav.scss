@@ -1,0 +1,36 @@
+@use 'variables';
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: variables.$brown;
+    padding: 1rem 10px;
+    gap: 10%;
+
+    .nav-brand{
+        p{
+            color: variables.$fff;
+            font-size: 1.3rem;
+            font-family: monospace;
+            span{
+                color: variables.$gold;
+                font-style: italic;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .nav-content{
+        display: flex;
+        gap: 20px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: variables.$fff;
+                font-family: monospace;
+                font-size: 1rem;
+            }
+        }
+    }
+}
