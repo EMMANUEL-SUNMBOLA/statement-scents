@@ -8,3 +8,24 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+@media(max-width:767px) {
+    nav{
+        align-items: baseline;
+        gap: 30%;
+        .nav-body{
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+            .nav-content{
+                width: 100%;
+                display: none;
+                flex-direction: column;
+            }
+        }
+        .hamdiv{
+            // outline: 1px solid green;
+            display: block;
+        }
+    }
+}

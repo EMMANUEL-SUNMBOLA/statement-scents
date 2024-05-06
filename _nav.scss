@@ -2,34 +2,60 @@
 
 nav{
     display: flex;
-    flex-direction: row;
     background-color: variables.$brown;
+    align-items: center;
+    height: max-content;
     padding: 1rem 10px;
-    gap: 10%;
-
-    .nav-brand{
-        p{
-            color: variables.$fff;
-            font-size: 1.3rem;
-            font-family: monospace;
-            span{
-                color: variables.$gold;
-                font-style: italic;
-                font-size: 1.7rem;
+    width: 100%;
+    .nav-body{
+        display: flex;
+        align-items: center;
+        gap: 40%;
+        .nav-brand{
+            outline: 1px solid red;
+            width: max-content;
+            p{
+                color: variables.$fff;
+                font-size: 1.3rem;
+                font-family: monospace;
+                span{
+                    color: variables.$gold;
+                    font-style: italic;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    
+        .nav-content{
+            display: flex;
+            width: 50%;
+            gap: 20px;
+            outline: 1px solid green;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: variables.$fff;
+                    font-family: monospace;
+                    font-size: 1rem;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        color: variables.$gold;
+                    }
+                }
             }
         }
     }
 
-    .nav-content{
-        display: flex;
-        gap: 20px;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: variables.$fff;
-                font-family: monospace;
-                font-size: 1rem;
+    .hamdiv{
+        display: none;
+        i{
+            font-size: 2rem;
+            cursor: pointer;
+            color: variables.$fff;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: variables.$gold;
             }
         }
     }
