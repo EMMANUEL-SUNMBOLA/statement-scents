@@ -4,16 +4,15 @@ nav{
     display: flex;
     background-color: variables.$brown;
     align-items: center;
-    height: max-content;
     padding: 1rem 10px;
     width: 100%;
     .nav-body{
+        width: 100%;
         display: flex;
+        gap: 30%;
         align-items: center;
-        gap: 40%;
         .nav-brand{
-            outline: 1px solid red;
-            width: max-content;
+            width: 50%;
             p{
                 color: variables.$fff;
                 font-size: 1.3rem;
@@ -28,9 +27,8 @@ nav{
     
         .nav-content{
             display: flex;
-            width: 50%;
+            width: 100%;
             gap: 20px;
-            outline: 1px solid green;
             li{
                 list-style: none;
                 a{

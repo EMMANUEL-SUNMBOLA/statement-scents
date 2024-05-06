@@ -7,16 +7,21 @@
     outline: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: all .3s ease-in-out;
 }
 
 @media(max-width:767px) {
     nav{
         align-items: baseline;
-        gap: 30%;
         .nav-body{
+            width: 80%;
             gap: 3rem;
             display: flex;
             flex-direction: column;
+            align-items: start;
+            .nav-brand{
+                width: 100%;
+            }
             .nav-content{
                 width: 100%;
                 display: none;
@@ -24,7 +29,6 @@
             }
         }
         .hamdiv{
-            // outline: 1px solid green;
             display: block;
         }
     }
