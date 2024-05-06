@@ -1,0 +1,25 @@
+@use 'variables';
+main{
+    background: url("../../images/mainpagebg.jpeg");
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    .container{
+        padding: 3rem;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h3{
+            color: variables.$brown;
+            font-size: 1.5rem;
+            font-family: monospace;
+        }
+    }
+}
