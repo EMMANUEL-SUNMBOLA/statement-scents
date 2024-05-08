@@ -3,8 +3,8 @@
 .men{
     padding: 2rem;
     display: flex;
-    gap: 20%;
-    h1{
+    gap: 10%;
+    .menheading{
         writing-mode: vertical-rl;
         text-orientation: upright;
         color: variables.$brown;
@@ -12,6 +12,9 @@
         font-weight: 900;
         font-family: monospace;
         font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .container{
@@ -23,18 +26,21 @@
             width: 100%;
             outline: 1px solid green;
             height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            font-family: monospace;
+            // font-size: ;
         }
     }
-    
-    h1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
 
 @media(max-width: 767px){
     .men{
+        gap: 5%;
         .container{
             grid-template-columns: repeat(2, 1fr);
             width: 100%;
