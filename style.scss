@@ -11,7 +11,11 @@
     transition: all .3s ease-in-out;
 }
 
-@media(max-width:767px) {
+body{
+    min-height: 100vh;
+}
+
+@media(max-width:900px) {
     nav{
         align-items: baseline;
         .nav-body{
