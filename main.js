@@ -10,11 +10,13 @@ if(hamdiv.style.display !== "none"){
         // alert("why you touch me")
         if(hambut.classList.contains("fa-bars")){
             hambut.classList.replace("fa-bars", "fa-xmark");
-            navContent.style.display = "flex"
+            navContent.style.display = "flex";
+            nav.style.position = "fixed";
         }else{
             hambut.classList.replace("fa-xmark", "fa-bars");
-            navContent.style.display = "none"       
-            navContent.style.transition = "all .3s ease-in-out"       
+            navContent.style.display = "none";
+            navContent.style.transition = "all .3s ease-in-out";
+            nav.style.position = "absolute";
         }
     })
 
