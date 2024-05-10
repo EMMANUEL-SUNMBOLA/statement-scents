@@ -2,7 +2,7 @@ let nav = document.getElementsByTagName("nav")[0];
 let navContent = document.getElementsByClassName("nav-content")[0]
 let hamdiv = document.getElementsByClassName("hamdiv")[0]
 let hambut = document.getElementById("hambut")
-
+const viewbtn = document.getElementsByClassName("quickviewbtn")
 
 if(hamdiv.style.display !== "none"){
 
@@ -21,3 +21,5 @@ if(hamdiv.style.display !== "none"){
     })
 
 }
+
+
