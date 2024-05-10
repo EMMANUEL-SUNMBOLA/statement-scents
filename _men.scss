@@ -118,6 +118,30 @@
                         }
                     }
                     
+                    .addcart{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: variables.$fff;
+                        font-size: 12px;
+                        font-family: monospace;
+                        background-color: variables.$sky;
+                        padding: 10px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: transparent;
+                            outline: 1px solid;
+                        }
+                    }
+
+                    .addwish{
+                        margin: 5px;
+                        text-decoration: none;
+                        color: variables.$fff;
+                        text-transform: uppercase;
+                        font-family: monospace;
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -127,8 +151,10 @@
 
 @media(max-width: 900px){
     .men{
+        
         gap: 5%;
-
+        // align-items: baseline;
+        justify-content: end;
         .container{
             grid-template-columns: repeat(2, 1fr);
             width: 100%;
@@ -137,10 +163,10 @@
             .product{
 
                 .quickview1{
-                    top: 35vh;
-                    right: 10vh;
+                    // top: 35vh;
+                    // right: 10vh;
                     width: 70%;
-
+                    display: none;
                     .productdescr{
 
                         .name{
