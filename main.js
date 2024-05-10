@@ -2,7 +2,8 @@ let nav = document.getElementsByTagName("nav")[0];
 let navContent = document.getElementsByClassName("nav-content")[0]
 let hamdiv = document.getElementsByClassName("hamdiv")[0]
 let hambut = document.getElementById("hambut")
-const viewbtn = document.getElementsByClassName("quickviewbtn")
+let viewbtns = document.querySelectorAll(".quickviewbtn");
+let quickviews = document.querySelectorAll(".quickview");
 
 if(hamdiv.style.display !== "none"){
 
@@ -22,4 +23,9 @@ if(hamdiv.style.display !== "none"){
 
 }
 
-
+viewbtns.foreach((viewbtn, i)=>{
+    viewbtn.addEventListener("click", ()=>{
+        // quickviews[i].style.display = "flex"
+        alert("maddo" + i)
+    })
+})
