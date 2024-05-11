@@ -189,15 +189,20 @@
 
             .product{
 
-                .quickview1{
-                    // top: 35vh;
-                    // right: 10vh;
+                .quickview{
+                    top: 20vh;
+                    left: 20%;
                     width: 70%;
                     display: none;
+                    .img-div{
+                        // outline: 1px solid red;
+                        img{
+                            width: 100%;
+                        }
+                    }
                     .productdescr{
-
                         .name{
-                            font-size: 1.1rem;
+                            font-size: 1rem;
                             letter-spacing: normal;
                             padding: 10px 0;
                         }

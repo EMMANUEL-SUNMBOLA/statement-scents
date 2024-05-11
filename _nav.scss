@@ -47,6 +47,7 @@ nav{
 
     .hamdiv{
         display: none;
+        transition: opacity 0.5s ease-in-out;
         i{
             font-size: 2rem;
             cursor: pointer;
