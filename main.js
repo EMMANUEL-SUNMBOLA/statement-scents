@@ -4,6 +4,7 @@ let hamdiv = document.getElementsByClassName("hamdiv")[0]
 let hambut = document.getElementById("hambut")
 let viewbtns = document.querySelectorAll(".quickviewbtn");
 let quickviews = document.querySelectorAll(".quickview");
+let closebtns = document.querySelectorAll(".cancelbtn")
 
 if(hamdiv.style.display !== "none"){
 
@@ -23,9 +24,16 @@ if(hamdiv.style.display !== "none"){
 
 }
 
-viewbtns.foreach((viewbtn, i)=>{
+viewbtns.forEach((viewbtn, i)=>{
     viewbtn.addEventListener("click", ()=>{
         // quickviews[i].style.display = "flex"
-        alert("maddo" + i)
+        // alert("maddo" + i)
+        quickviews[i].style.display = "flex"
+    })
+})
+
+closebtns.forEach((closebtn, i)=>{
+    closebtn.addEventListener("click", ()=>{
+        quickviews[i].style.display = "none"
     })
 })

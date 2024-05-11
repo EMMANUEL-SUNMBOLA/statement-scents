@@ -71,15 +71,14 @@
                 }
             }
             
+
             .quickview{
                 display: none;
-            }
-            .quickview1{
                 background-color: #555;
                 position: fixed;
                 top: 40vh;
                 right: 15%;
-                display: flex;
+                // display: flex;
                 height: 50vh;
                 align-items: center;
                 z-index: 1;
