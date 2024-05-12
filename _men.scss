@@ -20,8 +20,10 @@
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2%;
+        gap: 5%;
         width: 100%;
+        align-items: center;
+        justify-content: center;
         .product{
             
             .productview{
